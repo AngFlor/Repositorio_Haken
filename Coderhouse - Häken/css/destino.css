@@ -167,30 +167,12 @@ section ul li {
   grid-template-columns: repeat(4, 1fr); }
 
 /*bem*/
-.img {
-  width: 300px;
-  height: auto; }
-
-.tarjeta__img {
-  width: 100%;
-  height: auto; }
-
-.tarjeta__fecha {
-  font-style: normal;
-  text-align: left;
-  margin-bottom: 20px; }
-
-.tarjeta__titulo {
-  font-size: 1.5rem;
-  font-style: bold;
-  text-align: left;
-  margin-bottom: 20px; }
-
-.tarjeta__parrafo {
-  line-height: 28px;
-  font-size: 1rem;
-  text-align: left; }
+.imagen_blog {
+  height: 150px; }
 
 .boton_blog {
   display: inline-block;
   text-decoration: none; }
+
+.contenedor {
+  background-color: gray; }
