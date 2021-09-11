@@ -46,6 +46,10 @@ nav{
     color: #222C39;
 }
 
+ul li a:hover{
+    color:#EDB149;    
+}
+
 .seleccion-menu{
     color: #EDB149;
     font-style: bold;
