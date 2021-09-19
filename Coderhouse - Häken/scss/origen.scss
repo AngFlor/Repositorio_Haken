@@ -1,3 +1,11 @@
+// VARIABLES
+$amarillo: #EDB149;
+$azulcobalto: #222C39;
+$grisclaro: #97a9c0;
+$grismedio: #6e7b8b;
+$grisobscuro: #4b545e;
+$medidafondo: 1920px;
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +28,7 @@ header{
 }
 
 .slidePrincipal{
-    width: 100%;
+    width: 1080px;
     height: auto;
 }
 
@@ -40,7 +48,7 @@ div{
 }
 
 nav a:hover{
-    color:$amarillo9;
+    color:$amarillo;
 }
 
 nav{
@@ -192,7 +200,7 @@ section ul li{
 
 .productos-home{
     display: grid;
-    height: 500px;
+    height: 600px;
     width: auto;
     grid-auto-columns: auto;
     grid-template-areas:
@@ -201,31 +209,95 @@ section ul li{
     "Restaurante"
     "Educativo";
     grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
 }
 
+.dos-columnas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 60px;
+}
 .cuatro-columnas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
-/*bem*/
-
-.imagen_blog{
-    height: 150px;
+.cinco-columnas{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(5, 1fr);
 }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+
+.uno {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dos {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tres {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.cuatro {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cinco {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.seis {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.siete {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.ocho {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+// bem
 
 .boton_blog{
 	display: inline-block;
 	text-decoration: none;
 }
 
-.contenedor{
+.contenedor1{
     background-color: gray;
 }
 
-//VARIABLES
-$amarillo: #EDB149;
-$azulcobalto: #222C39;
-$grisclaro: #97a9c0;
-$grismedio: #6e7b8b;
-$grisobscuro: #4b545e;
+// CONDICIONALES
+.box_one{
+    background-color: $grisclaro;
+    width: $medidafondo;
+}
+
+.box_two{
+    width: $medidafondo/2;
+}
+
+.box_three{
+    width: $medidafondo*2;
+}
+
+

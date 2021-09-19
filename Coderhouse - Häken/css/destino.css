@@ -17,7 +17,7 @@ header {
   color: #222C39; }
 
 .slidePrincipal {
-  width: 100%;
+  width: 1080px;
   height: auto; }
 
 div {
@@ -98,7 +98,7 @@ h2 {
   padding: 30px 30px 30px 0px; }
 
 h3 {
-  color: grey;
+  color: #6e7b8b;
   padding: 30 px; }
 
 h4 {
@@ -156,23 +156,78 @@ section ul li {
 
 .productos-home {
   display: grid;
-  height: 500px;
+  height: 600px;
   width: auto;
   grid-auto-columns: auto;
   grid-template-areas: "Oficina" "Hotelerìa" "Restaurante" "Educativo";
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around; }
+
+.dos-columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px; }
 
 .cuatro-columnas {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center; }
 
-/*bem*/
-.imagen_blog {
-  height: 150px; }
+.cinco-columnas {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(5, 1fr); }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto; }
+
+.uno {
+  grid-column: 1;
+  grid-row: 1; }
+
+.dos {
+  grid-column: 2;
+  grid-row: 1; }
+
+.tres {
+  grid-column: 1;
+  grid-row: 2; }
+
+.cuatro {
+  grid-column: 2;
+  grid-row: 2; }
+
+.cinco {
+  grid-column: 1;
+  grid-row: 3; }
+
+.seis {
+  grid-column: 2;
+  grid-row: 3; }
+
+.siete {
+  grid-column: 1;
+  grid-row: 4; }
+
+.ocho {
+  grid-column: 2;
+  grid-row: 4; }
 
 .boton_blog {
   display: inline-block;
   text-decoration: none; }
 
-.contenedor {
+.contenedor1 {
   background-color: gray; }
+
+.box_one {
+  background-color: #97a9c0;
+  width: 1920px; }
+
+.box_two {
+  width: 960px; }
+
+.box_three {
+  width: 3840px; }
